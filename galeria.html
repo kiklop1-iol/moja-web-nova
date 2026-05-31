@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galéria</title>
+    <link rel="stylesheet" href="štýl.css">
+    <style>
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 2rem;
+            width: 100%;
+        }
+        .gallery-item {
+            background: #e2e8f0;
+            border-radius: 6px;
+            height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #64748b;
+            font-weight: bold;
+            text-transform: uppercase;
+            /* Ak budeš mať reálne obrázky, použiješ: background-image: url('foto.jpg'); */
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Galéria</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Domov</a></li>
+                <li><a href="o-nas.html">O nás</a></li>
+                <li><a href="produkty.html">Produkty</a></li>
+                <li><a href="galéria.html" class="active">Galéria</a></li>
+                <li><a href="štatistiky.html">Štatistiky</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="content" style="width: 100%; max-width: 900px;">
+            <h2>Ukážky našej práce</h2>
+            <p>Pozrite si vizuálne zachytenie našich doterajších úspechov a projektov.</p>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item">Projekt A</div>
+                <div class="gallery-item">Projekt B</div>
+                <div class="gallery-item">Projekt C</div>
+                <div class="gallery-item">Projekt D</div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 kiklop1-iol. Všetky práva vyhradené.</p>
+    </footer>
+
+</body>
+</html>
