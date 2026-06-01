@@ -123,15 +123,12 @@ main {
     border-radius: 6px;
 }
 
-
-/* Galéria */
 .gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1rem;
-    margin-top: 2rem;
     width: 100%;
+    max-width: 900px;
+    margin: auto;
 }
+
 
 .gallery-item {
     background-size: cover;
@@ -139,6 +136,23 @@ main {
     background-repeat: no-repeat;
     height: 200px;
     border-radius: 8px;
+}
+
+
+.two-col {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    text-align: left;
+}
+
+.two-col img {
+    flex: 1 1 300px;
+}
+
+.two-col div {
+    flex: 1 1 300px;
 }
 
 
