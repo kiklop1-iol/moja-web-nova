@@ -3,37 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Moja Web Stránka - Domov</title>
+    <title>Domov – BrickMaster</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-    <h1>Vitajte na mojom webe</h1>
+    <h1>BrickMaster – Svet stavebnice</h1>
     <nav>
         <ul>
             <li><a href="index.html" class="active">Domov</a></li>
-            <li><a href="o_nas.html">O nás</a></li>
-            <li><a href="produkty.html">Produkty</a></li>
             <li><a href="galeria.html">Galéria</a></li>
-            <li><a href="statystiky.html">Štatistiky</a></li>
-
+            <li><a href="vyrobky.html">Výrobky</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
         </ul>
     </nav>
 </header>
 
 <main>
-    <section class="hero">
-        <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d" class="hero-img">
-        <h2>Moderné riešenia pre váš úspech</h2>
-        <p>Toto je úvodná stránka môjho nového projektu na GitHube. Pozrite si naše produkty alebo sa dozviete viac o tom, čo robíme.</p>
-        <a href="produkty.html" class="btn">Pozrieť produkty</a>
+    <section class="hero reveal">
+        <img id="slider" src="https://copilot.microsoft.com/th/id/BCO.f4407d58-ad1e-4e1d-8c8c-70a693599479.png">
+        <h2>Tvorte. Stavajte. Objavujte.</h2>
+        <p>Stavebnice BrickMaster prinášajú nekonečné možnosti pre malých aj veľkých tvorcov.</p>
+        <a href="vyrobky.html" class="btn">Pozrieť produkty</a>
     </section>
+
+    <section class="content reveal">
+    <h2>Prečo práve naše stavebnice?</h2>
+    <p>BrickMaster stavebnice sú navrhnuté tak, aby podporovali kreativitu, logické myslenie a radosť z tvorby. Každý dielik je presne tvarovaný a kompatibilný s ostatnými, takže možnosti sú nekonečné.</p>
+
+    <div class="features">
+        <div class="feature-box">
+            <h3>✔ Nekonečné kombinácie</h3>
+            <p>Každý set obsahuje dieliky, ktoré môžeš ľubovoľne kombinovať.</p>
+        </div>
+
+        <div class="feature-box">
+            <h3>✔ Kvalitné materiály</h3>
+            <p>Bezpečné, pevné a farebne stálé dieliky pre dlhú životnosť.</p>
+        </div>
+
+        <div class="feature-box">
+            <h3>✔ Pre deti aj dospelých</h3>
+            <p>Stavebnice, ktoré zabavia celú rodinu.</p>
+        </div>
+    </div>
+</section>
+
 </main>
 
 <footer>
-    <p>&copy; 2026 kiklop1-iol. Všetky práva vyhradené.</p>
+    <p>&copy; 2026 BrickMaster</p>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
