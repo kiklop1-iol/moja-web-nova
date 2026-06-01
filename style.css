@@ -95,14 +95,20 @@ main {
 /* Obrázky */
 .hero-img {
     width: 100%;
+    height: auto;
     border-radius: 8px;
-    margin-bottom: 1.5rem;
+    display: block;
 }
 
+
 .side-img {
-    width: 45%;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
     border-radius: 8px;
+    object-fit: cover;
 }
+
 
 .two-col {
     display: flex;
@@ -112,9 +118,11 @@ main {
 
 .product-img {
     width: 100%;
+    height: 180px;
+    object-fit: cover;
     border-radius: 6px;
-    margin-bottom: 1rem;
 }
+
 
 /* Galéria */
 .gallery-grid {
@@ -128,9 +136,11 @@ main {
 .gallery-item {
     background-size: cover;
     background-position: center;
-    height: 180px;
+    background-repeat: no-repeat;
+    height: 200px;
     border-radius: 8px;
 }
+
 
 /* Pätička */
 footer {
